@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+    tests-acceptance:
+        build: './tests/acceptance'
+        entrypoint: 'bash /tests/acceptance/entrypoint.sh'
+        env_file:
+            - tests/acceptance/.env.docker
+        depends_on: 
+            - apache
+            - postgres
+        networks:
+            - frontend

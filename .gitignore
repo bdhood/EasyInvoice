@@ -1,0 +1,8 @@
+.vs/
+.cache/
+.git/
+.vscode/
+
+dist/
+node_modules/
+tests/acceptance/.pytest_cache/
